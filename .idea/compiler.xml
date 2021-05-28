@@ -7,16 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="auth-test" />
+        <module name="auth-spring-boot-autoconfigure" />
         <module name="auth-spring-boot-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="auth-test" target="1.8" />
       <module name="test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-permission" options="-parameters" />
+      <module name="auth-spring-boot-autoconfigure" options="-parameters" />
       <module name="auth-spring-boot-starter" options="" />
       <module name="auth-test" options="-parameters" />
       <module name="test" options="-parameters" />

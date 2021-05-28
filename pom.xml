@@ -5,14 +5,24 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zrtg</groupId>
-    <artifactId>auth-boot-starter</artifactId>
+    <artifactId>auth-permission</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
+
 
     <modules>
+        <module>auth-spring-boot-autoconfigure</module>
         <module>auth-spring-boot-starter</module>
-        <module>auth-test</module>
     </modules>
+
+
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://10.20.50.181:18081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
