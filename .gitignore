@@ -1,2 +1,3 @@
 # Project exclude paths
 /auth-spring-boot-starter/target/
+/auth-spring-boot-autoconfigure/target/
